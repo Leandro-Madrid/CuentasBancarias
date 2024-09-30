@@ -4,14 +4,14 @@ package ar.edu.davinci;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        CajaAhorro CajaAhorro = new CajaAhorro("CA1");
+        CajaAhorro.depositar(100);
+        CajaAhorro.extraer(50);
+        CajaAhorro.extraer(70);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        CuentaCorriente cuentaCorriente = new CuentaCorriente("CC1", 200);
+        cuentaCorriente.depositar(100);
+        cuentaCorriente.extraer(250);
+        cuentaCorriente.extraer(100);
     }
 }
